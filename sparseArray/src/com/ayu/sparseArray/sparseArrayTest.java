@@ -45,7 +45,7 @@ public class sparseArrayTest {
                 }
             }
         }
-        //打印压缩后的数组，占有3*3*4=36个字节的空间，压缩率为36/484
+        //打印压缩后的数组，占有4*3*4=48个字节的空间，压缩率为48/484
         for(int []row:zip){
             for(int elem:row){
                 System.out.printf("%d\t",elem);

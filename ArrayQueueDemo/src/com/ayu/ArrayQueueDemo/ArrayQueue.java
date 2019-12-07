@@ -1,3 +1,5 @@
+package com.ayu.ArrayQueueDemo;
+
 public class ArrayQueue {
     private int maxSize;
     private int[] Queue;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArrayQueueDemo/ArrayQueueDemo.iml" filepath="$PROJECT_DIR$/ArrayQueueDemo/ArrayQueueDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CircleLinkListDemo/CircleLinkListDemo.iml" filepath="$PROJECT_DIR$/CircleLinkListDemo/CircleLinkListDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/sparseArray/sparseArray.iml" filepath="$PROJECT_DIR$/sparseArray/sparseArray.iml" />
     </modules>

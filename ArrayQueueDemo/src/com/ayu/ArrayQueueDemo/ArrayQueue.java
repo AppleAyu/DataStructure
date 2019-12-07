@@ -3,8 +3,8 @@ package com.ayu.ArrayQueueDemo;
 public class ArrayQueue {
     private int maxSize;
     private int[] Queue;
-    private int front = -1;
-    private int rear = -1;
+    private int front = 0;
+    private int rear = 0;
 
     public ArrayQueue() {
         this.maxSize = 256;
@@ -22,27 +22,33 @@ public class ArrayQueue {
     }
 
     public boolean isFull() {
-        return (this.rear - this.front + 1 + maxSize) % maxSize == 0;
+        return (this.rear + 1) % maxSize == this.front;
     }
 
     public void addElem(int x) {
-        if (!this.isFull()) {
-            this.rear = (this.rear + 1) % maxSize;
-            this.Queue[this.rear] = x;
-        }else{
+        if (this.isFull()) {
             System.out.println("满了");
+        } else {
+            this.Queue[this.rear] = x;
+            this.rear = (this.rear + 1) % maxSize;
         }
     }
 
     public void deleteElem() {
-        if (!this.isEmpty()) {
+        if (this.isEmpty()) {
+            System.out.println("空的");
+        } else {
             this.front = (this.front + 1) % maxSize;
         }
     }
 
     public void displayQueue() {
-        for (int i = (this.front +1)%maxSize;i<=this.rear;i=(i+1)%maxSize){
-            System.out.println(Queue[i]);
+       if(this.isEmpty()){
+            System.out.println("空的");
+            return;
+        }
+        for (int i = this.front; i!=this.rear ; i=(i+1)%maxSize) {
+            System.out.println(this.Queue[i]);
         }
     }
 
@@ -58,7 +64,10 @@ public class ArrayQueue {
         arrayQueue.deleteElem();
         arrayQueue.deleteElem();
         arrayQueue.deleteElem();
+        arrayQueue.addElem(3);
         arrayQueue.addElem(4);
+        arrayQueue.deleteElem();
+        arrayQueue.deleteElem();
         arrayQueue.displayQueue();
     }
 }

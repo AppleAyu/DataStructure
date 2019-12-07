@@ -21,6 +21,6 @@ public class DemoTest {
                 circleLinkList.length--;
             }
         }
-
+        System.out.println(t.data);
     }
 }

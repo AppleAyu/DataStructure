@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ArrayStackDemo/ArrayStackDemo.iml" filepath="$PROJECT_DIR$/ArrayStackDemo/ArrayStackDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/CircleLinkListDemo/CircleLinkListDemo.iml" filepath="$PROJECT_DIR$/CircleLinkListDemo/CircleLinkListDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/sparseArray/sparseArray.iml" filepath="$PROJECT_DIR$/sparseArray/sparseArray.iml" />
     </modules>
   </component>
